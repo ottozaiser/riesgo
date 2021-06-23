@@ -100,7 +100,8 @@ section {
   margin-top: -1px; }
 
 .fh {
-  min-height: 100vh; }
+  height: 100vh;
+  min-height: 600px; }
 
 .w-2 {
   display: grid;
