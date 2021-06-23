@@ -70,6 +70,9 @@ h1 {
 .z0 {
   z-index: 0 !important; }
 
+.z4 {
+  z-index: 4 !important; }
+
 .z20 {
   z-index: 20; }
 
