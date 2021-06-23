@@ -1,0 +1,563 @@
+body {
+  background-color: #333;
+  font-family: "Pangolin", cursive;
+  color: #222; }
+
+h1 {
+  position: absolute;
+  width: 100%;
+  font-weight: 900;
+  font-size: 50px;
+  padding: 40px; }
+
+.sticky {
+  position: fixed !important; }
+
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.centrar-col {
+  flex-direction: column; }
+
+.centrarrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.centrarabajo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+
+.centrararriba {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+
+.centrameabajo {
+  align-self: flex-end; }
+
+.centramearriba {
+  align-self: flex-start; }
+
+.achicar50 {
+  transform: scale(0.5); }
+
+.achicar20 {
+  transform: scale(0.8); }
+
+.agrandar50 {
+  transform: scale(1.5); }
+
+.agrandar20 {
+  transform: scale(1.2); }
+
+.flip {
+  transform: scale(-1, 1); }
+
+.opa80 {
+  opacity: 0.2; }
+
+.opa50 {
+  opacity: 0.5; }
+
+.opa20 {
+  opacity: 0.8; }
+
+.z20 {
+  z-index: 20; }
+
+.debug {
+  border: 1px solid yellow; }
+
+.caption {
+  background-color: white;
+  border-radius: 8px;
+  border: 3px solid #333;
+  display: inline-block;
+  font-size: 18px;
+  max-width: 200px;
+  padding: 16px;
+  text-align: center;
+  z-index: 1000;
+  margin: 50px; }
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-right: 2px solid #000;
+  border-left: 2px solid #000; }
+
+section {
+  position: relative;
+  overflow: hidden;
+  margin-top: -1px; }
+
+.fh {
+  min-height: 100vh; }
+
+.w-2 {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+
+.panel01 {
+  position: relative;
+  width: 100%;
+  background-image: url("img/01.png");
+  background-repeat: no-repeat;
+  background-position: -20px 40px; }
+
+.clouds-sm {
+  position: absolute;
+  height: 224px;
+  width: 367px;
+  z-index: 2;
+  background-image: url("img/01_Clouds_sm.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 100%; }
+
+.clouds-md {
+  position: absolute;
+  height: 170px;
+  width: 529px;
+  z-index: 10;
+  background-image: url("img/01_Clouds_md.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 100%; }
+
+.clouds-lg {
+  position: absolute;
+  height: 196px;
+  width: 708px;
+  z-index: 10;
+  background-image: url("img/01_Clouds_lg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 100%; }
+
+.sky {
+  background-color: #d6f8ff;
+  position: relative; }
+
+.falling {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-left: -75px;
+  height: 217px;
+  width: 130px;
+  z-index: 5;
+  background-image: url("img/01_Falling.png");
+  background-repeat: no-repeat;
+  background-position: -130px 0; }
+
+.falling-0 {
+  background-position: 0px 0; }
+
+.falling-1 {
+  background-position: -130px 0; }
+
+.falling-2 {
+  background-position: -260px 0; }
+
+.splash {
+  position: relative;
+  height: 198px;
+  width: 100%;
+  z-index: 20;
+  background-image: url("img/01_Splash.png");
+  background-repeat: no-repeat;
+  background-position: center bottom; }
+
+.splashback {
+  position: relative;
+  width: 100%;
+  background-image: url("img/01_SplashBack.png");
+  background-repeat: no-repeat;
+  background-position: center bottom; }
+
+.water {
+  background-color: #0087db; }
+
+.waterbg01 {
+  background-image: url("img/02_WaterBg01.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 50; }
+
+.waterbg02 {
+  background-image: url("img/02_WaterBg02.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 50; }
+
+.water01 {
+  background-image: url("img/02_Water_01.png");
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.water02 {
+  background-image: url("img/02_Water_02.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  opacity: 0.9; }
+
+.water03 {
+  background-image: url("img/02_Water_03.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.8; }
+
+.water04 {
+  background-image: url("img/02_Water_04.png");
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.water05 {
+  background-image: url("img/02_Water_05.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain; }
+
+.swimming {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -202px;
+  margin-left: -168px;
+  height: 404px;
+  width: 336px;
+  z-index: 5;
+  background-image: url("img/02_Water_04.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.7; }
+
+.swimmerend {
+  opacity: 1; }
+
+.overlap {
+  margin-top: -400px; }
+
+.overlapless {
+  margin-top: -250px; }
+
+.medusa {
+  position: relative;
+  height: 482px;
+  width: 300px;
+  z-index: 1000;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.wiggleSwimmer {
+  animation: swimmer 4s;
+  animation-iteration-count: infinite; }
+
+@keyframes swimmer {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.9, 0.9); }
+  100% {
+    transform: scale(1, 1); } }
+
+.wiggle01 {
+  animation: medusawiggle01 4s;
+  animation-iteration-count: infinite; }
+
+@keyframes medusawiggle01 {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(30px); }
+  100% {
+    transform: translateY(0); } }
+
+.wiggle02 {
+  animation: medusawiggle02 4s;
+  animation-iteration-count: infinite; }
+
+@keyframes medusawiggle02 {
+  0% {
+    transform: scale(0.8, 0.8) translateY(0); }
+  50% {
+    transform: scale(0.8, 0.8) translateY(-15px); }
+  100% {
+    transform: scale(0.8, 0.8) translateY(0); } }
+
+.wiggle02 {
+  animation: medusawiggle02 4s;
+  animation-iteration-count: infinite; }
+
+@keyframes medusaalpha {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
+
+.wigglealpha {
+  animation: medusaalpha 2s;
+  animation-iteration-count: infinite; }
+
+.medusa01 {
+  background-image: url("img/02_Water_05_Medusa01.png"); }
+
+.medusa02 {
+  background-image: url("img/02_Water_05_Medusa02.png"); }
+
+.medusa03 {
+  background-image: url("img/02_Water_05_Medusa03.png"); }
+
+.pulpo {
+  background-color: #e2107b;
+  background-image: url("img/03_Pulpo_Pattern.png");
+  background-position: center center; }
+
+.pulpo01 {
+  background-image: url("img/03_Pulpo_01.png");
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.pulpo02 {
+  background-image: url("img/03_Pulpo_02.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%; }
+
+.pulpo03 {
+  background-image: url("img/03_Pulpo_03.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  height: 700px;
+  margin-bottom: 20px; }
+
+.tripa {
+  position: relative;
+  height: 150px;
+  background-image: url("img/03_Pulpo_04_Tripa.png");
+  background-repeat: repeat-x;
+  background-position: center center;
+  margin-bottom: 20px; }
+
+.tripaCornerLeft {
+  position: absolute;
+  left: 0;
+  height: 320px;
+  width: 150px;
+  margin-left: -80px;
+  background-image: url("img/03_Pulpo_04_TripaCorner.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  z-index: 40;
+  align-self: flex-start; }
+
+.tripaCornerRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 320px;
+  width: 150px;
+  margin-right: -80px;
+  background-image: url("img/03_Pulpo_04_TripaCorner.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  z-index: 40;
+  transform: scale(-1, 1);
+  align-self: flex-start; }
+
+.tripaTop {
+  top: -170px; }
+
+.tripaEnd {
+  width: 50%; }
+
+.tripaInside01 {
+  background-image: url("img/03_Pulpo_04_Inside01.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+  position: absolute; }
+
+.tripaInside02 {
+  background-image: url("img/03_Pulpo_04_Inside02.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  position: absolute; }
+
+.tripaInside03 {
+  background-image: url("img/03_Pulpo_04_Inside03.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  z-index: 500; }
+
+.estomago {
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.pulpo05 {
+  background-image: url("img/03_Pulpo_05.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  height: 500px;
+  margin-top: -170px;
+  z-index: 40; }
+
+.pulpotransi {
+  background: #e2107b;
+  background: linear-gradient(180deg, #e2107b 0%, #0db599 30%); }
+
+.esperma {
+  background-color: #0db599; }
+
+.esperma01 {
+  background-image: url("img/04_Esperma_01.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 500px;
+  width: 100%; }
+
+.esperma02 {
+  background-image: url("img/04_Esperma_02.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 500px;
+  width: 100%; }
+
+.sperm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -202px;
+  margin-left: -168px;
+  height: 404px;
+  width: 336px;
+  z-index: 5;
+  background-image: url("img/Esperma.gif");
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.endtransi {
+  background: linear-gradient(180deg, #0db599 50%, #0a8571 100%); }
+
+.firma {
+  position: absolute;
+  right: 20px;
+  bottom: 55px;
+  z-index: 50;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  font-family: "Pangolin", cursive;
+  font-size: 14px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  padding: 15px;
+  text-align: center;
+  line-height: 18px; }
+
+.firma a,
+.firma a:hover,
+.firma a:visited a:active {
+  color: white; }
+
+.show-sm {
+  display: none; }
+
+@media (max-width: 1000px) {
+  .estomago {
+    margin-left: 100px;
+    margin-right: 100px; }
+  .pulpo03 {
+    background-size: cover;
+    background-position: left bottom;
+    height: 500px;
+    margin-bottom: 20px; }
+  .firma {
+    bottom: 10px;
+    width: 25px;
+    height: 25px;
+    right: 10px;
+    font-size: 12px;
+    line-height: 12px; } }
+
+@media (max-width: 700px) {
+  .estomago {
+    margin-left: 20px;
+    margin-right: 20px; }
+  .pulpo03 {
+    background-size: cover;
+    background-position: left bottom;
+    height: 400px; } }
+
+@media (max-width: 500px) {
+  .hide-sm {
+    display: none; }
+  .show-sm {
+    display: inherit; }
+  .centrarabajo-sm {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+  .centrararriba-sm {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; }
+  .fh {
+    min-height: 50vh; }
+  .fh-full {
+    min-height: 100vh; }
+  .fh-full2 {
+    min-height: 150vh; }
+  .fh-sm {
+    min-height: 25vh; }
+  .w-2 {
+    display: grid;
+    grid-template-columns: 100%; }
+  .clouds-md {
+    background-size: contain; }
+  .panel01 {
+    background-position: -150px 40px; }
+  .water05 {
+    background-size: 130%; }
+  .pulpo01 {
+    background-size: 90%; }
+  .pulpo02 {
+    background-size: 90%; }
+  .pulpo03 {
+    height: 350px;
+    margin-left: -20px;
+    margin-right: -20px;
+    background-size: cover;
+    background-position: left bottom; } }
