@@ -100,12 +100,12 @@ section {
   margin-top: -1px; }
 
 .fh {
-  height: 100vh;
-  min-height: 600px; }
+  min-height: 100vh; }
 
 .w-2 {
   display: grid;
-  grid-template-columns: 50% 50%; }
+  grid-template-columns: 50% 50%;
+  min-height: 600px; }
 
 .panel01 {
   position: relative;
